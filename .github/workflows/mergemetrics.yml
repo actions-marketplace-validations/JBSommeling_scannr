@@ -1,0 +1,26 @@
+name: MergeMetrics Dashboard
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jbsommeling/merge-metrics@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fix file ownership
+        run: sudo chown -R $(id -u):$(id -g) .
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: update MergeMetrics dashboard"
+          title: "chore: update MergeMetrics dashboard"
+          body: "Automated dashboard update by MergeMetrics."
+          branch: mergemetrics/update-dashboard
+          delete-branch: true
+          add-paths: |
+            docs/*
+            README.md

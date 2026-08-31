@@ -1,0 +1,119 @@
+{
+  "repo_name": "scannr",
+  "repo_full_name": "JBSommeling/scannr",
+  "generated_at": "2026-06-13T23:26:10.245880422Z",
+  "health_score": {
+    "total_score": 73,
+    "band": "Needs Attention",
+    "categories": [
+      {
+        "name": "Review Speed",
+        "score": 100,
+        "weight": 0.2,
+        "contribution": 20,
+        "detail": "Median review time: 4 minutes"
+      },
+      {
+        "name": "Bus Factor",
+        "score": 20,
+        "weight": 0.2,
+        "contribution": 4,
+        "detail": "Bus factor: 1"
+      },
+      {
+        "name": "PR Hygiene",
+        "score": 100,
+        "weight": 0.15,
+        "contribution": 15,
+        "detail": "0 stale PRs"
+      },
+      {
+        "name": "PR Size",
+        "score": 100,
+        "weight": 0.15,
+        "contribution": 15,
+        "detail": "Median PR size: 0 lines"
+      },
+      {
+        "name": "Issue Health",
+        "score": 100,
+        "weight": 0.1,
+        "contribution": 10,
+        "detail": "0 open issues"
+      },
+      {
+        "name": "Deploy Frequency",
+        "score": 80,
+        "weight": 0.1,
+        "contribution": 8,
+        "detail": "Deploy frequency score: 80"
+      },
+      {
+        "name": "Contributor Diversity",
+        "score": 12,
+        "weight": 0.1,
+        "contribution": 1.2000000000000002,
+        "detail": "HHI: 0.90"
+      }
+    ],
+    "recommendations": [
+      "Increase bus factor - encourage broader code ownership",
+      "Encourage contributions from more team members"
+    ]
+  },
+  "pr_bottleneck": {
+    "OpenPRCount": 0,
+    "AveragePRAgeDays": 0,
+    "StalePRs": null,
+    "WaitingForReview": 0,
+    "WaitingForAuthor": 0,
+    "ReviewerWorkload": null,
+    "Bottlenecks": null
+  },
+  "bus_factor": {
+    "Contributors": [
+      {
+        "Login": "JBSommeling",
+        "Commits": 189,
+        "SharePct": 94.5
+      },
+      {
+        "Login": "Copilot",
+        "Commits": 10,
+        "SharePct": 5
+      },
+      {
+        "Login": "github-actions[bot]",
+        "Commits": 1,
+        "SharePct": 0.5
+      }
+    ],
+    "BusFactor": 1,
+    "HHI": 0.89555,
+    "TotalCommits": 200,
+    "AnalysisPeriodDays": 180
+  },
+  "reviews": {
+    "AverageReviewTime": 463666666666,
+    "MedianReviewTime": 240000000000,
+    "P90ReviewTime": 921000000000,
+    "ReviewerStats": [
+      {
+        "Login": "copilot-pull-request-reviewer[bot]",
+        "AvgResponseTime": 463666666666,
+        "ReviewCount": 3,
+        "ReviewsPerWeek": 0.23333333333333334
+      }
+    ],
+    "TotalReviews": 3,
+    "ReviewThroughput": 0.23333333333333334
+  },
+  "releases": {
+    "ReleasesLastMonth": 0,
+    "ReleasesLastWeek": 0,
+    "AvgTimeBetweenReleases": 315733250000000,
+    "Trend": "decreasing",
+    "DeployFrequencyScore": 80,
+    "TotalReleases": 17
+  }
+}
